@@ -19,3 +19,18 @@ func counting_bits(number int) []int {
 	result := append([]int{len(onesPositions)}, onesPositions...)
 	return result
 }
+
+// func counting_bits(number int) []int {
+// 	var onesPositions []int
+// 	position := 0
+// 	onesPositions = append(onesPositions, 0)
+// 	for number > 0 {
+// 		if is1 := number & 1; is1 == 1 {
+// 			onesPositions[0]++
+// 			onesPositions = append(onesPositions, position)
+// 		}
+// 		number = number >> 1
+// 		position++
+// 	}
+// 	return onesPositions
+// }
